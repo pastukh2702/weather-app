@@ -1,0 +1,58 @@
+<div class="main_container">
+  <div class="card_container" >
+    
+    
+    
+
+
+    <mat-accordion>
+        <mat-expansion-panel class="panel" >
+            <mat-expansion-panel-header class="panel">
+              <mat-panel-title>
+                  GEO - {{ cityGeo }}
+              </mat-panel-title>
+              <mat-panel-description class="panel_dscr">
+                  {{ tempGeo }}°
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <h1 class="onpanel">{{ condGeo }}</h1>
+            <button (click)="openDetailsGeo()" class="remBut">MORE INFORMATION</button>
+            <br>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel  class="panel" *ngFor="let city of citySt; let i = index">
+            <mat-expansion-panel-header class="panel">
+              <mat-panel-title>
+                  {{ city.city }}
+              </mat-panel-title>
+              <mat-panel-description class="panel_dscr">
+                  {{ city.temp }}°
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <h1 class="onpanel">{{ city.condition }}</h1>
+            
+            <button (click)="removeWeather(i)" class="remBut">DELETE</button> 
+            <button (click)="openDetails(i)" class="remBut">MORE INFORMATION</button>
+            
+        </mat-expansion-panel>
+
+        
+    </mat-accordion>
+
+    
+
+  </div>
+
+
+  
+  <div class="main_search_container">
+    
+    <input [(ngModel)]="city" class="input_box" placeholder="input your best city...">
+    <button (click)="addWeather()">ADD NEW CITY</button><p></p>
+    <p class="second_text">hey, you can add an infinite number of cities... and you can move a little cloud near the word ".weather" </p>
+  </div>
+  
+  
+  
+
+</div>

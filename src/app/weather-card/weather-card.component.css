@@ -1,0 +1,136 @@
+*{
+    font-family:'Righteous', cursive;
+    font-size: 40px;
+    color: white;
+    /* animation-duration: 1.5s;
+    animation-name: button; */
+}
+
+
+@keyframes outzoom {
+    0% {
+
+        transform: scale(100);
+
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes width {
+    from {
+        width: 60%;
+    }
+    to {
+        width: 50px;
+
+    }
+}
+
+
+
+
+
+
+
+
+.main_container{
+    width: 580px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 170px;
+}
+
+.main_search_container{
+    width: 580px;
+    text-align: center;
+}
+
+
+
+
+
+
+.panel{
+    color: white;
+    background: none;
+    box-shadow: none;
+    margin: 0px;
+    text-align: left; 
+    animation: opacity 0.5s;
+    margin-bottom: 5px;
+}
+.panel_dscr{
+    text-align: right;
+    display: block;
+    border-bottom: 3px solid white ;  
+    animation-duration: 1s;
+    animation-name: width; 
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.onpanel{
+    width: 20px;
+    padding-top: 15px;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    outline: none;
+    background: none;
+    border: 0px;
+    padding: 0px;
+
+
+}
+.remBut{
+    font-size: 20px;
+    margin: 0px;
+    margin-top: -15px;
+    padding-right: 10px;
+    float: right;
+    text-decoration: none;
+}
+button:hover{
+    color: black;
+}
+.second_text{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+.input_box{
+    padding-left: 10px;
+    outline: none;
+    background: none;
+    border: white 3px solid;
+    width: 515px;
+    margin:auto;
+    margin-top: 30px;
+    margin-right: 0px;
+    animation: outzoom 1s;
+}
+
+

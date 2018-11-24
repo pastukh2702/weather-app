@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+*{
+    font-family:'Righteous', cursive;
+    font-size: 40px;
+    color: white;
+    /* animation-duration: 1.5s;
+    animation-name: button; */
+}
+@keyframes cloud{
+    0% {
+        transform: translate(0px,-200px);
+    }
+    100% {
+        transform: translate(0px,0px);
+    }
+}
+.main_container{
+    width: 580px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 50px;
+    font-size: 60px;
+}
+.main_logo{
+    font-size: 50px;
+}
+.cloud{
+    background-image: url(./img/cloud.png) ;
+    background-size:contain;
+    color: white;
+    height: 65px;
+    width: 65px;
+    margin: 4px;
+    margin-right: 10px;
+    float: right;
+    animation: cloud 2s;
+}
